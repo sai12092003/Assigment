@@ -38,6 +38,11 @@ The system can be extended to integrate **AI-driven authentication** and **autho
 |---------|---------|---------|
 | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen5.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen6.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen7.jpeg?raw=true" width="100"/> |
 
+## Access Control for Posts
+
+- **Admin**: Can **create**, **edit**, **delete** posts, and manage all content.
+- **Moderator**: Can **edit** and **delete** posts, but cannot create new ones.
+- **User**: Can only **view** posts. They do not have permissions to create, edit, or delete content.
 
 
 
