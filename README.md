@@ -28,6 +28,20 @@ The system can be extended to integrate **AI-driven authentication** and **autho
   - Stores user details and roles.
   - Follows best practices with foreign keys, cascading deletes, and indexing for fast queries.
 
+## Application Screens
+
+| Screen             | Core Functionality      | Access Control      | Image               |
+|--------------------|-------------------------|---------------------|---------------------|
+| Login              | User Authentication     | Public Access       | ![Login](image_url) |
+| Registration       | User Onboarding         | Public Access       | ![Registration](image_url) |
+| Dashboard          | User Overview           | Authenticated Users | ![Dashboard](image_url) |
+| Comment Management | Interaction Platform    | Role-Based Access   | ![Comment Management](image_url) |
+| Admin Panel        | System Configuration    | Admin Exclusive     | ![Admin Panel](image_url) |
+| Profile Management | Personal Information    | Authenticated Users | ![Profile Management](image_url) |
+| Role Assignment    | User Permission Control | Admin Exclusive     | ![Role Assignment](image_url) |
+| System Settings    | Application Configuration | Role-Dependent      | ![System Settings](image_url) |
+
+
 
 ### **Key Technologies and Libraries Used**:
 - **Flask**: Web framework
@@ -237,97 +251,12 @@ RBAC is implemented to ensure that only users with specific roles can access cer
 This backend system provides a secure, scalable solution for implementing Role-Based Access Control (RBAC) in a web application. The use of **Flask**, **MySQL**, and **JWT** ensures that the system is efficient, secure, and easy to extend. The project adheres to best practices in security, including **password hashing**, **JWT authentication**, and **role-based authorization**. By following this implementation, we can ensure that only authorized users can access sensitive data and perform critical actions.
 
 ---
-# VRV Security - Advanced Role-Based Access Control System
-
-## Project Overview
-
-A high-performance backend authentication and authorization framework designed to provide robust security and granular access control for modern web applications.
-
-## Unique Value Proposition
-
-- **Intelligent Access Management**: Implement sophisticated role-based access controls with minimal configuration
-- **Seamless Authentication**: JWT-based authentication with advanced security mechanisms
-- **Scalable Architecture**: Designed for enterprise-grade applications with flexible role assignment
-
-## Technology Stack
-
-- **Backend Framework**: Flask
-- **Authentication**: JWT (Flask-JWT-Extended)
-- **Database ORM**: SQLAlchemy
-- **Database**: MySQL
-- **Security**: Bcrypt Password Hashing
-- **Frontend**: Flutter
 
 
 
-## Setup and Installation
-
-### Backend Configuration
-
-1. Clone the repository
-2. Create virtual environment
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Database Configuration:
-   ```python
-   app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/vrv_security'
-   app.config['SECRET_KEY'] = 'robust_secret_key_here'
-   ```
-
-5. Launch Application:
-   ```bash
-   python app.py
-   ```
-
-### Frontend Setup
-
-1. Navigate to frontend directory
-2. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-
-## Security Architecture
-
-### Authentication Mechanisms
-- Bcrypt-powered password encryption
-- JWT token-based authentication
-- Multi-layer role-based access control
 
 
 
-## Application Screens
-
-| Screen | Core Functionality | Access Control |
-|--------|-------------------|----------------|
-| Login | User Authentication | Public Access |
-| Registration | User Onboarding | Public Access |
-| Dashboard | User Overview | Authenticated Users |
-| Comment Management | Interaction Platform | Role-Based Access |
-| Admin Panel | System Configuration | Admin Exclusive |
-| Profile Management | Personal Information | Authenticated Users |
-| Role Assignment | User Permission Control | Admin Exclusive |
-| System Settings | Application Configuration | Role-Dependent |
-
-## API Endpoint Architecture
-
-### Authentication Endpoints
-- `POST /register`: User registration process
-- `POST /login`: Secure user authentication
-- `GET /get_role`: Retrieve user authorization level
-
-### Comment Management
-- `POST /post_comment`: Create new comments
-- `GET /get_comments`: Retrieve comment collection
-- `DELETE /delete_comment/<id>`: Comment removal mechanism
-
-### User Administration
-- `GET /get_users`: Retrieve user inventory
-- `PUT /update_role`: Modify user permissions
-- `DELETE /delete_user/<email>`: User account termination
 
 ## Performance Optimization
 
