@@ -5,9 +5,9 @@
 
 ## **Introduction**
 
-This project aims to implement a robust **Role-Based Access Control (RBAC)** system using **Flask** as the backend framework, with **JWT** for authentication and **MySQL** for database management. This system is designed to ensure that users have appropriate access to resources based on their assigned roles (Admin, User, Moderator, etc.).
+This project implements an RBAC system using **Flask, JWT for authentication, and MySQL for database management**, ensuring role-based access to resources.
 
-I chose **Flask** for this project because it is lightweight, flexible, and well-suited for building RESTful APIs. With its powerful extension system, including **Flask-SQLAlchemy** for database interaction and **Flask-JWT-Extended** for secure JWT-based authentication, Flask ensures quick and efficient implementation.
+Flask was chosen for its flexibility in building RESTful APIs. Additionally, I developed a **real-time app** with similar RBAC features, used at **Saveetha Medical College** for data collection. [https://apps.apple.com/in/app/orthoflexelbow/id6738036592]
 
 ## **AI Integration**
 
