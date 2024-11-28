@@ -30,16 +30,17 @@ The system can be extended to integrate **AI-driven authentication** and **autho
 
 ## Application Screens
 
-| Screen             | Core Functionality      | Access Control      | Image               |
-|--------------------|-------------------------|---------------------|---------------------|
-| Login              | User Authentication     | Public Access       | ![Login]([image_url](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen1.jpeg)) |
-| Registration       | User Onboarding         | Public Access       | ![Registration](image_url) |
-| Dashboard          | User Overview           | Authenticated Users | ![Dashboard](image_url) |
-| Comment Management | Interaction Platform    | Role-Based Access   | ![Comment Management](image_url) |
-| Admin Panel        | System Configuration    | Admin Exclusive     | ![Admin Panel](image_url) |
-| Profile Management | Personal Information    | Authenticated Users | ![Profile Management](image_url) |
-| Role Assignment    | User Permission Control | Admin Exclusive     | ![Role Assignment](image_url) |
-| System Settings    | Application Configuration | Role-Dependent      | ![System Settings](image_url) |
+| Screen             | Core Functionality      | Access Control      | Image                              |
+|--------------------|-------------------------|---------------------|------------------------------------|
+| Login              | User Authentication     | Public Access       | ![Login](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen1.jpeg?raw=true) |
+| Registration       | User Onboarding         | Public Access       | ![Registration](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen2.jpeg?raw=true) |
+| Dashboard          | User Overview           | Authenticated Users | ![Dashboard](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen3.jpeg?raw=true) |
+| Comment Management | Interaction Platform    | Role-Based Access   | ![Comment Management](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen4.jpeg?raw=true) |
+| Admin Panel        | System Configuration    | Admin Exclusive     | ![Admin Panel](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen5.jpeg?raw=true) |
+| Profile Management | Personal Information    | Authenticated Users | ![Profile Management](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen6.jpeg?raw=true) |
+| Role Assignment    | User Permission Control | Admin Exclusive     | ![Role Assignment](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen7.jpeg?raw=true) |
+| System Settings    | Application Configuration | Role-Dependent      | ![System Settings](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen8.jpeg?raw=true) |
+
 
 
 
