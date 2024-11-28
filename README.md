@@ -63,13 +63,11 @@ vrv-security/
 └── README.md              # Project documentation
 ```
 
-### **Step 1: Set up the Database**
-1. Create a MySQL database.
-2. Run the following SQL script to create necessary tables:
+## Setup Instructions
 
-
+### 1. Database Setup
+```sql
 CREATE DATABASE vrv_security;
-
 USE vrv_security;
 
 CREATE TABLE roles (
@@ -85,90 +83,113 @@ CREATE TABLE users (
     role_id INT,
     FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE CASCADE
 );
+```
 
+### 2. Install Dependencies
+```bash
+pip install flask flask_sqlalchemy flask_jwt_extended flask_bcrypt pymysql
+```
 
-### **Step 2: Install Dependencies**  
-Install the required Python libraries using pip:
-
-
-pip install flask flask_sqlalchemy flask_jwt_extended bcrypt
-
-
-### **Step 3: Configure the Backend**
-1. Set your MySQL username, password, and database name in the **app.py** file under the following line:
-
-
+### 3. Configuration
+Update the following in `app.py`:
+- Database Connection String
+```python
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/vrv_security'
+app.config['SECRET_KEY'] = 'your_secret_key'
+```
 
-
-2. Set your JWT secret key:
-
-
-app.config['JWT_SECRET_KEY'] = 'your_secret_key'
-
-
-### **Step 4: Run the Flask App**
-After setting up the database and configuring the app, run the Flask server:
-
-
+### 4. Run the Application
+```bash
 python app.py
+```
+
+## API Endpoints
+
+### 1. User Registration
+- **Endpoint**: `POST /register`
+- **Request Body**:
+```json
+{
+    "email": "user@example.com", 
+    "password": "password123",
+    "role": "user"
+}
+```
+- **Responses**:
+  - `201`: User registered successfully
+  - `400`: Email and password required
+  - `400`: User already exists
+
+### 2. User Login
+- **Endpoint**: `POST /login`
+- **Request Body**:
+```json
+{
+    "email": "user@example.com",
+    "password": "password123"
+}
+```
+- **Responses**:
+  - `200`: Login successful (returns JWT token)
+  - `400`: Email and password required
+  - `401`: Invalid credentials
+
+### 3. Get User Role
+- **Endpoint**: `GET /get_role`
+- **Authentication**: JWT Required
+- **Responses**:
+  - `200`: Returns user role
+  - `404`: User not found
+
+### 4. Post Comment
+- **Endpoint**: `POST /post_comment`
+- **Request Body**:
+```json
+{
+    "comments": "Sample comment",
+    "email": "user@example.com"
+}
+```
+- **Responses**:
+  - `201`: Comment posted successfully
+  - `400`: Missing comment or email
+  - `500`: Server error
+
+### 5. Get Comments
+- **Endpoint**: `GET /get_comments`
+- **Authentication**: JWT Required
+- **Response**: List of comments sorted by timestamp
+
+### 6. Delete Comment
+- **Endpoint**: `DELETE /delete_comment/<comment_id>`
+- **Authentication**: JWT Required (Admin/Moderator only)
+- **Responses**:
+  - `200`: Comment deleted successfully
+  - `403`: Permission denied
+
+### 7. Delete User
+- **Endpoint**: `DELETE /delete_user/<user_email>`
+- **Authentication**: JWT Required (Admin only)
+- **Responses**:
+  - `200`: User deleted successfully
+  - `403`: Permission denied
+
+### 8. Update User Role
+- **Endpoint**: `PUT /update_role`
+- **Authentication**: JWT Required (Admin only)
+- **Request Body**:
+```json
+{
+    "email": "user@example.com",
+    "role": "moderator"
+}
+```
+- **Responses**:
+  - `200`: Role updated successfully
+  - `400`: Email and role required
+  - `403`: Permission denied
 
 
-The server will be running on `http://127.0.0.1:5000`.
-
----
-
-## **API Endpoints**
-
-### **1. User Registration**
-- **POST /api/register**
-- Request Body:
-    
-    {
-        "username": "exampleuser",
-        "email": "user@example.com",
-        "password": "password123",
-        "role": "Admin"
-    }
-    
-- Response:
-    
-    {
-        "message": "User registered successfully"
-    }
-    
-
-### **2. User Login**
-- **POST /api/login**
-- Request Body:
-    
-    {
-        "email": "user@example.com",
-        "password": "password123"
-    }
-    
-- Response:
-
-    {
-        "access_token": "jwt_token_here"
-    }
-    
-
-### **3. Protected Route**
-- **GET /api/protected**
-- This endpoint is protected and can only be accessed by authenticated users with the `User` or `Admin` role.
-- Request Header:
-    
-    Authorization: Bearer <JWT Token>
-    
-- Response:
-    
-    {
-        "message": "Access granted"
-    }
-    
-
----
 
 ## **Database Design**
 
