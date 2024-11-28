@@ -32,7 +32,7 @@ The system can be extended to integrate **AI-driven authentication** and **autho
 
 | Screen             | Core Functionality      | Access Control      | Image               |
 |--------------------|-------------------------|---------------------|---------------------|
-| Login              | User Authentication     | Public Access       | ![Login](image_url) |
+| Login              | User Authentication     | Public Access       | ![Login]([image_url](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen1.jpeg)) |
 | Registration       | User Onboarding         | Public Access       | ![Registration](image_url) |
 | Dashboard          | User Overview           | Authenticated Users | ![Dashboard](image_url) |
 | Comment Management | Interaction Platform    | Role-Based Access   | ![Comment Management](image_url) |
