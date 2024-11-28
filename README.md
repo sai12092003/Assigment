@@ -30,16 +30,14 @@ The system can be extended to integrate **AI-driven authentication** and **autho
 
 ## Application Screens
 
-| Screen             | Core Functionality      | Access Control      | Image                              |
-|--------------------|-------------------------|---------------------|------------------------------------|
-| Login              | User Authentication     | Public Access       | ![Login](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen1.jpeg?raw=true) |
-| Registration       | User Onboarding         | Public Access       | ![Registration](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen2.jpeg?raw=true) |
-| Dashboard          | User Overview           | Authenticated Users | ![Dashboard](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen3.jpeg?raw=true) |
-| Comment Management | Interaction Platform    | Role-Based Access   | ![Comment Management](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen4.jpeg?raw=true) |
-| Admin Panel        | System Configuration    | Admin Exclusive     | ![Admin Panel](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen5.jpeg?raw=true) |
-| Profile Management | Personal Information    | Authenticated Users | ![Profile Management](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen6.jpeg?raw=true) |
-| Role Assignment    | User Permission Control | Admin Exclusive     | ![Role Assignment](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen7.jpeg?raw=true) |
-| System Settings    | Application Configuration | Role-Dependent      | ![System Settings](https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen8.jpeg?raw=true) |
+| Image 1 | Image 2 | Image 3 | Image 4 |
+|---------|---------|---------|---------|
+| <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen1.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen2.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen3.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen4.jpeg?raw=true" width="100"/> |
+
+| Image 5 | Image 6 | Image 7 |
+|---------|---------|---------|
+| <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen5.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen6.jpeg?raw=true" width="100"/> | <img src="https://github.com/sai12092003/Assigment/blob/main/Screen_images/screen7.jpeg?raw=true" width="100"/> |
+
 
 
 
