@@ -249,6 +249,12 @@ RBAC is implemented to ensure that only users with specific roles can access cer
 - Unauthorized access is blocked.
 
 ---
+## Performance Optimization
+
+- Efficient database queries
+- Minimal overhead authentication
+- Optimized token management
+- Scalable request handling
 
 ## **Conclusion**
 
@@ -262,12 +268,7 @@ This backend system provides a secure, scalable solution for implementing Role-B
 
 
 
-## Performance Optimization
 
-- Efficient database queries
-- Minimal overhead authentication
-- Optimized token management
-- Scalable request handling
 
 
 
