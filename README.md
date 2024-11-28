@@ -15,14 +15,19 @@ The system can be extended to integrate **AI-driven authentication** and **autho
 
 ## **Project Overview**
 
-### **Frontend**: Flutter  
-The Flutter app communicates with the backend to provide the user interface, enabling user registration, login, and role-based access. The front end handles user interactions, such as sending requests to the backend and displaying the relevant content based on the user’s role.
 
-### **Backend**: Flask  
-The backend is built with Flask and is responsible for handling requests, authenticating users, checking permissions, and providing access to specific resources based on roles.
 
-### **Database**: MySQL  
-We use MySQL to store user details and roles. The database schema follows best practices, including the use of foreign keys, cascading deletes, and indexing for fast queries.
+- **Frontend**: Flutter
+  - Communicates with the backend for user registration, login, and role-based access.
+  - Handles user interactions and displays content based on the user's role.
+
+- **Backend**: Flask
+  - Handles requests, authenticates users, and provides access based on roles.
+
+- **Database**: MySQL
+  - Stores user details and roles.
+  - Follows best practices with foreign keys, cascading deletes, and indexing for fast queries.
+
 
 ### **Key Technologies and Libraries Used**:
 - **Flask**: Web framework
