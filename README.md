@@ -36,7 +36,7 @@ We use MySQL to store user details and roles. The database schema follows best p
 ### **Requirements**:
 - Python 3.x
 - MySQL Server
-- Node.js (for Flutter development)
+- Dart (for Flutter development)
 
   ## Project Structure
 
