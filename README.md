@@ -199,18 +199,4 @@ This backend system provides a secure, scalable solution for implementing Role-B
 
 ---
 
-## **License**
-This project is licensed under the MIT License.
 
-```
-
-This README includes the following:
-
-1. **Project Overview** – Explains the backend framework, frontend integration, and the choice of tools.
-2. **Setup Instructions** – Provides installation and configuration instructions for setting up the project.
-3. **API Endpoints** – Details the endpoints, request bodies, and responses for interacting with the system.
-4. **Security** – Describes how password hashing, JWT, and role-based access control are implemented.
-5. **Database Design** – Explains the relational structure between users and roles, as well as foreign key constraints.
-6. **Conclusion** – Summarizes the project's functionality and future enhancement possibilities.
-
-Feel free to modify the content, especially the **"License"** section, to match your actual project’s licensing terms.
