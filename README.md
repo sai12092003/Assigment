@@ -38,6 +38,26 @@ We use MySQL to store user details and roles. The database schema follows best p
 - MySQL Server
 - Node.js (for Flutter development)
 
+  ## Project Structure
+
+```
+vrv-security/
+│
+├── backend/
+│   ├── app.py             # Core application logic
+│   ├── models.py          # Database schema definitions
+│   ├── routes.py          # API endpoint configurations
+│   └── requirements.txt   # Dependency management
+│
+├── frontend/
+│   ├── lib/
+│   │   ├── screens/       # User interface components
+│   │   └── services/      # API interaction layers
+│   └── pubspec.yaml       # Flutter dependencies
+│
+└── README.md              # Project documentation
+```
+
 ### **Step 1: Set up the Database**
 1. Create a MySQL database.
 2. Run the following SQL script to create necessary tables:
@@ -154,6 +174,7 @@ The server will be running on `http://127.0.0.1:5000`.
 
 ---
 
+
 ## **Security Best Practices**
 
 ### **Password Hashing**  
@@ -211,25 +232,7 @@ A high-performance backend authentication and authorization framework designed t
 - **Security**: Bcrypt Password Hashing
 - **Frontend**: Flutter
 
-## Project Structure
 
-```
-vrv-security/
-│
-├── backend/
-│   ├── app.py             # Core application logic
-│   ├── models.py          # Database schema definitions
-│   ├── routes.py          # API endpoint configurations
-│   └── requirements.txt   # Dependency management
-│
-├── frontend/
-│   ├── lib/
-│   │   ├── screens/       # User interface components
-│   │   └── services/      # API interaction layers
-│   └── pubspec.yaml       # Flutter dependencies
-│
-└── README.md              # Project documentation
-```
 
 ## Setup and Installation
 
@@ -268,10 +271,7 @@ vrv-security/
 - JWT token-based authentication
 - Multi-layer role-based access control
 
-### Key Security Principles
-- Centralized authentication
-- Granular permission management
-- Secure token generation and validation
+
 
 ## Application Screens
 
@@ -310,27 +310,6 @@ vrv-security/
 - Optimized token management
 - Scalable request handling
 
-## Architectural Highlights
 
-- Decoupled frontend and backend
-- Modular design philosophy
-- Extensible authentication framework
-- Comprehensive error handling
-- Logging and monitoring capabilities
-
-## Technical Differentiators
-
-- Real-time role synchronization
-- Intelligent access token management
-- Sophisticated permission inheritance
-- Dynamic role-based routing
-- Comprehensive security middleware
-
-## Recommended Enhancements
-
-- Implement advanced multi-factor authentication
-- Develop comprehensive audit logging
-- Create adaptive authentication mechanisms
-- Integrate machine learning-based anomaly detection
 
 
